@@ -7,8 +7,8 @@
           <tr>
             <td align="left" style="padding:32px 63px 0 63px" >
               <a href="{{$empresa->pagina_web}}" target="_blank" >
-                <img alt="" src="https://www.jypsac.com/wp-content/uploads/2020/04/logo_jypsac_png.png" width="136" class="CToWUd">
-                <img style="text-align: right;" align="right" src="https://www.flaticon.com/svg/vstatic/svg/850/850109.svg?token=exp=1618334433~hmac=c25e7b452f714da55b26646044731535" width="136" class="CToWUd"></a>
+                <img alt="" src="{{asset('multimedia/empresa')}}/{{$empresa->foto}}" width="150" class="CToWUd">
+                <img style="text-align: right;" align="right" src="{{asset('multimedia/tickets.png')}}" width="120" class="CToWUd"></a>
 
                 <span style="font-family:Helvetica,Arial,sans-serif;font-size:24px;line-height:31px;color:#777777;padding:0;margin:28px 0 32px 0;font-weight:400;text-align:left;text-decoration:none;display:block">{{$usuarios->name}} {{$usuarios->last_name}}</span>
 
@@ -28,8 +28,7 @@
           <table cellpadding="0" cellspacing="0" style="padding:0;margin:0;border:0">
             <tbody>
               <tr>
-                <td style="padding:0 8px"><a style="text-decoration:none"><img alt="" src="https://www.jypsac.com/wp-content/uploads/2020/04/logo_jypsac_png.png" width="80" class="CToWUd"></a></td>
-
+                <td style="padding:0 8px"><img src="{{asset('multimedia/empresa')}}/{{$empresa->foto}}" width="80" class="CToWUd"></td>
               </tr>
             </tbody>
           </table>
