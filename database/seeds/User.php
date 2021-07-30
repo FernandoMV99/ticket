@@ -15,6 +15,8 @@ class UserSeeder extends Seeder
             'name' => 'Luis Fernando' ,
             'last_name' => ' Miranda Valdez' ,
             'empresa' => 'JYP PERIFERICOS S.A.C' ,
+            'documento_identificacion' => '2' ,
+            'numero_identificacion' => '72857654' ,
             'email' => 'fernandomv.0102@gmail.com' ,
             'password' =>bcrypt('123'),
             'codigo_confirmacion' => '123' ,

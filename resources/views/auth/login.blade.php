@@ -154,11 +154,11 @@ input:focus{
                         {{-- <div class="d-flex justify-content-center links">
                             No tienes una Cuenta?<a  href="{{ route('register') }}" style="color: blue">{{ __('Registrar') }}</a>
                         </div> --}}
-                        <div class="d-flex justify-content-center">
+                       {{--  <div class="d-flex justify-content-center">
                            @if (Route::has('password.request'))
                            <a  href="{{ route('password.request') }}" style="color: white">{{ __('¿Olvidaste tu contraseña?') }}</a>
                            @endif
-                       </div>
+                       </div> --}}
                    </div>
                </div>
            </div>
