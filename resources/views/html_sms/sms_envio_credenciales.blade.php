@@ -15,7 +15,7 @@
                 <p style="font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:20px;color:#333333;margin:0;padding:0;margin:0 0 20px 0;text-align:left">
                   Hola!! déjame darte la bienvenida a nuestra plataforma. A continuación encontrará las credenciales para acceder a su nueva cuenta.
                   Estos son sus datos de acceso: <br> <br>
-                  <span style="font-size:15px;line-height:31px;color:#777777;padding:5px;margin:28px 0 32px 0;text-align:left;display:block;border-radius:10px;border:2px solid #39e084">Correo: {{$usuarios->email}} <br> Contraseña: {{$contrasena_generada}}<br></span>
+                  <span style="font-size:15px;line-height:31px;color:#777777;padding:5px;margin:28px 0 32px 0;text-align:left;display:block;border-radius:10px;border:2px solid #39e084">{{-- Correo: {{$usuarios->email}} <br> <br> --}} Contraseña: {{$contrasena_generada}}<br></span>
                 </p>
                 <p style="font-family:Helvetica,Arial,sans-serif;font-size:16px;line-height:20px;color:#333333;padding:0;margin:35px 0 0 0;text-align:left">
                   No comparta con nadie este mensaje<br><br>{{$empresa->nombre}}
