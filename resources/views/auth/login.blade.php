@@ -189,7 +189,7 @@ input:focus{
     });
 </script>
 <!-- Notificacion de Errores -->
-@if($errors->any())
+{{-- @if($errors->any())
 @foreach ($errors->all() as $error)
 <link href="{{ asset('css/plugins/toastr/toastr.min.css') }}" rel="stylesheet">
 <script src="{{ asset('js/plugins/toastr/toastr.min.js') }}"></script>
@@ -207,7 +207,7 @@ input:focus{
     });
 </script>
 @endforeach
-@endif
+@endif --}}
 <!-- FIN Notificacion de Errores -->
 </body>
 
