@@ -74,7 +74,7 @@
                 </style>
 
                 <li>
-                    <a href="/"><img src="{{ asset('/multimedia/inicio.svg')}}" class="iconos"><span class="nav-label">Inicio</span> </a>
+                    <a href="{{route('home')}}"><img src="{{ asset('/multimedia/inicio.svg')}}" class="iconos"><span class="nav-label">Inicio</span> </a>
                 </li>
                 <li>
                     <a href="#"><img src="{{ asset('/multimedia/ticket2.svg')}}" class="iconos"><span class="nav-label">Tickets</span> <span class="fa arrow"></span></a>
@@ -203,7 +203,7 @@
             </nav>
         </div>
         <div class="row  border-bottom white-bg dashboard-header">
-            <div class="col-lg-10"><h2><img src="/multimedia/@yield("img_title",'' )" width="30px"> @yield('title', 'Inicio')</h2></div>
+            <div class="col-lg-10"><h2><img src="{{ asset('multimedia/') }}/@yield("img_title",'' )" width="30px"> @yield('title', 'Inicio')</h2></div>
             <div class="col-lg-2" align="right">
                 <a  data-toggle="@yield('data-toggle1', '')" data-target="@yield('data-target1', '')" @yield('atributo1', '')  href="@yield('href_accion1', '#')" class="btn btn-primary">@yield('value_accion1', '')</a>
 
