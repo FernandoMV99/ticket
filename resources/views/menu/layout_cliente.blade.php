@@ -74,7 +74,7 @@
                 </style>
 
                 <li>
-                    <a href="{{route('home')}}"><img src="{{ asset('/multimedia/inicio.svg')}}" class="iconos"><span class="nav-label">Inicio</span> </a>
+                    <a href="../ticket/public"><img src="{{ asset('/multimedia/inicio.svg')}}" class="iconos"><span class="nav-label">Inicio</span> </a>
                 </li>
                 <li>
                     <a href="#"><img src="{{ asset('/multimedia/ticket2.svg')}}" class="iconos"><span class="nav-label">Tickets</span> <span class="fa arrow"></span></a>
