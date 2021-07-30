@@ -1,7 +1,7 @@
 @extends('menu.layout')
 
+@section('img_title', 'ticket2.svg')
 @section('title', 'Motivos')
-
 @section('value_accion1', 'Agregar')
 @section('data-toggle1', 'modal')
 @section('data-target1', '#AgregarMotivo')
