@@ -73,7 +73,7 @@
                     .iconos{width: 22px;margin-right: 10px}
                 </style>
                 <li>
-                    <a href="/"><img src="{{ asset('/multimedia/inicio.svg')}}" class="iconos"><span class="nav-label">Inicio</span> </a>
+                    <a href="{{route('home')}}"><img src="{{ asset('/multimedia/inicio.svg')}}" class="iconos"><span class="nav-label">Inicio</span> </a>
                 </li>
 
                 <li>
