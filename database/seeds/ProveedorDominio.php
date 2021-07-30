@@ -22,7 +22,7 @@ class ProveedorDominiosSeeder extends Seeder
         ]);
          DB::table('proveedor_dominios')->insert([
             'id' => 2 ,
-            'nombre'=> 'GooDaddy',
+            'nombre'=> 'GoDaddy',
             'descripcion'=>'Lorem ipsum, dolor sit, amet consectetur adipisicing elit. Dolore ipsa beatae dicta reprehenderit voluptatum eius mollitia ab quod rerum, ea corrupti placeat enim doloremque soluta inventore, fugit animi, suscipit ipsam.',
             'correo'=> 'goodaddy@hosdtin.com',
             'estado'=> '1',
