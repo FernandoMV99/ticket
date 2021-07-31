@@ -54,17 +54,17 @@
 							<tbody>
 								@foreach($motivos as $motivo)
 								<tr>
-									<td>{{$motivo->id}}</td>
+									<td>{{$motivo->id}} </td>
 									<td>{{$motivo->nombre}}</td>
-									<td>{{$motivo->estado->nombre}}</td>
-									<td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2">Editar</button></td>
+									<td>@if($motivo->estado_id==2)<button class="btn btn-warning btn-xs">Desactivo</button>@else <button class="btn btn-info btn-xs">Activo</button> @endif</td>
+									<td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal2{{$motivo->id}}">Editar</button></td>
 
-									<div class="modal inmodal" id="myModal2" tabindex="-1" role="dialog" aria-hidden="true">
+									<div class="modal inmodal" id="myModal2{{$motivo->id}}" tabindex="-1" role="dialog" aria-hidden="true">
 										<div class="modal-dialog">
 											<div class="modal-content animated flipInY">
 												<div class="modal-header">
 													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-													<h4 class="modal-title">Modal title</h4>
+													<h4 class="modal-title">Editar Motivos</h4>
 												</div>
 												<form action ="{{route('motivos.update',$motivo->id)}}" method="POST" enctype="multipart/form-data" >
 													@csrf
@@ -75,7 +75,12 @@
 															<div class="col-sm-10">
 																<input type="text" class="form-control" name="motivo" value="{{$motivo->nombre}}" required="required" autocomplete="off">
 															</div>
-
+														</div>
+														<div class="form-group row">
+															<label class="col-sm-2 col-form-label">estado:</label>
+															<div class="col-sm-10">
+																<input type="checkbox" class="js-switch_{{$motivo->id}}" name="estado"  @if($motivo->estado_id==1) checked="" @endif />
+															</div>
 														</div>
 													</div>
 													<div class="modal-footer">
@@ -87,6 +92,7 @@
 									</div>
 
 								</tr>
+
 								@endforeach
 							</tbody>
 						</table>
@@ -120,5 +126,15 @@
 			buttons: []});
 	});
 </script>
+<link href="{{asset('css/plugins/switchery/switchery.css')}}" rel="stylesheet">
+<!-- Switchery -->
+<script src="{{asset('js/plugins/switchery/switchery.js')}}"></script>
+
+@foreach($motivos as $motivo)
+<script>
+	var elem_2 = document.querySelector('.js-switch_{{$motivo->id}}');
+	var switchery_2 = new Switchery(elem_2, { color: '#ED5565' });
+</script>
+@endforeach
 
 @endsection

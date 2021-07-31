@@ -88,9 +88,13 @@ class MotivosController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $motivos=Motivo::first();
+        $estado=$request->get('estado');
+        if (isset($estado)) {$estado=1;}
+        else{$estado=2;}
+
+        $motivos=Motivo::find($id);
         $motivos->nombre=$request->get('motivo');
-        // $motivos->estado_id='1';
+        $motivos->estado_id=$estado;
         $motivos-> save();
         return redirect()->route('motivos.index');
     }

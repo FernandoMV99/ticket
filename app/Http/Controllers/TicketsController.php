@@ -49,7 +49,7 @@ class TicketsController extends Controller
         $tickets_agregado=TicketsAgregado::all();
         $tickets_agregado_cliente=TicketsAgregado::where('cliente',$user)->get();
         // $user=User::all();
-        $motivo=Motivo::all();
+        $motivo=Motivo::where('estado_id',1)->get();
         $soporte_existe=SoporteTecnico::where('cliente',$user)->where('estado_anulado',0)->first();
 
         $equipo=Equipos::where("cliente",$user)->get();
