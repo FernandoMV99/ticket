@@ -69,7 +69,6 @@ class HomeController extends Controller
         $dominio=Dominios::where('cliente',$user_logeado->id)->where('estado_anulado',0)->get();
         $licencia=Licencia::where('cliente',$user_logeado->id)->where('estado_anulado',0)->get();
         $certificado=CertificadoSsl::where('cliente',$user_logeado->id)->where('estado_anulado',0)->get();
-
         /*Proximos a Vencer*/
 
         if ($user_logeado->roles_id == 3) /*Si es Cliente te lleva aca*/

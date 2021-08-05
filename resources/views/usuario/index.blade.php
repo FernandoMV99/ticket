@@ -21,8 +21,6 @@ input#archivoInput{
 }
 </style>
 {{-- FIN MODAL AGREGAR Usuarios --}}
-{{-- {{date("d-m-Y H:m:s")}}
-<input type="date"> --}}
 <div class="modal inmodal fade" id="AgregarUsuario" tabindex="-1" role="dialog"  aria-hidden="true">
 	<div class="modal-dialog modal-lg">
 		<div class="modal-content">
