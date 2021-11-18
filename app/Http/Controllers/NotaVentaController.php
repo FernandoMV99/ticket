@@ -63,6 +63,12 @@ class NotaVentaController extends Controller
       $cantidad_certi_ssl=0;
       $cantidad_soporte=0;
       $cantidad_licencia=0;
+      $hosting_impresion=NULL;
+      $dominio_impresion=NULL;
+      $certificadossl_impresion=NULL;
+      $soporte_imprension=NULL;
+      $licencia_impresion=NULL;
+
 
       if (empty($ticket) & empty($hosting) & empty($soporte) & empty($dominio) & empty($certificadossl) & empty($licencia))/*Si ninguno esta Seleccionado*/
         {return Redirect::to('/nota_venta')->withErrors(['No has Seleccionado Ninguna Nota de Venta']);}
