@@ -83,7 +83,7 @@
 													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
 													<h4 class="modal-title">Editar Planes</h4>
 												</div>
-												<form action ="{{route('proveedor_dominio.update',$plan_dominios->id)}}" method="POST" enctype="multipart/form-data" >
+												<form action ="{{route('plan_dominio.update',$plan_dominios->id)}}" method="POST" enctype="multipart/form-data" >
 													@csrf
 													@method('PATCH')
 													<div class="modal-body">
@@ -97,7 +97,7 @@
 															<label class="col-sm-2 col-form-label">Moneda:</label>
 															<div class="col-sm-10">
 
-																<select name="" id="" class="form-control" name="moneda">
+																<select  class="form-control" name="moneda">
 																	@foreach($moneda as $monedas)
 																	<option value="{{$monedas->simbolo}}" @if($monedas->simbolo==$plan_dominios->moneda) selected="" @endif >{{$monedas->simbolo}}</option>
 																	@endforeach

@@ -67,14 +67,14 @@ class PlanDominioController extends Controller
      if ($estado=='on') { $estado='1';}
      else{ $estado='2';}
 
-     $plan_hosting=PlanHosting::find($id);
-     $plan_hosting->nombre=$request->get('nombre');
-     $plan_hosting->descripcion=$request->get('descripcion');
+     $plan_hosting=PlanDominio::find($id);
+     // $plan_hosting->nombre=$request->get('nombre');
+     // $plan_hosting->descripcion=$request->get('descripcion');
      $plan_hosting->moneda=$request->get('moneda');
      $plan_hosting->precio=$request->get('precio');
      $plan_hosting->estado=$estado;
      $plan_hosting->save();
-     return redirect()->route('planes_hosting.index');
+     return redirect()->route('plan_dominio.index');
 
    }
 
