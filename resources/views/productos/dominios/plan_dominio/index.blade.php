@@ -107,7 +107,7 @@
 														<div class="form-group row">
 															<label class="col-sm-2 col-form-label">Precio:</label>
 															<div class="col-sm-10">
-																<input type="number" class="form-control" name="correo" value="{{$plan_dominios->precio}}" required="required" autocomplete="off">
+																<input type="number" class="form-control" name="precio" value="{{$plan_dominios->precio}}" required="required" autocomplete="off">
 															</div>
 														</div>
 														<div class="form-group row">
